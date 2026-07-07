@@ -1,0 +1,23 @@
+{
+  "name": "qaeverest",
+  "description": "Generate AI-powered functional, API, UI & mobile test cases and run security & performance checks against your app — without leaving your editor. Wraps the QAEverest public API as MCP tools plus ready-made slash commands.",
+  "version": "1.1.0",
+  "author": {
+    "name": "QAEverest",
+    "url": "https://qaeverest.ai"
+  },
+  "homepage": "https://qaeverest.ai",
+  "repository": "https://github.com/abhilasha3-ai/qaeverest-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "qa",
+    "test-cases",
+    "test-generation",
+    "api-testing",
+    "ui-automation",
+    "security",
+    "performance",
+    "mcp"
+  ]
+}

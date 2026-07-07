@@ -1,0 +1,25 @@
+{
+  "name": "qaeverest",
+  "owner": {
+    "name": "QAEverest",
+    "url": "https://qaeverest.ai"
+  },
+  "metadata": {
+    "description": "QAEverest plugins for Claude Code — AI test generation, security & performance checks."
+  },
+  "plugins": [
+    {
+      "name": "qaeverest",
+      "source": "./claude-plugin",
+      "description": "Generate AI-powered functional, API, UI & mobile test cases and run security & performance checks via the QAEverest API.",
+      "version": "1.1.0",
+      "author": {
+        "name": "QAEverest",
+        "url": "https://qaeverest.ai"
+      },
+      "homepage": "https://qaeverest.ai",
+      "license": "MIT",
+      "keywords": ["testing", "qa", "test-generation", "api-testing", "ui-automation", "security", "performance", "mcp"]
+    }
+  ]
+}
