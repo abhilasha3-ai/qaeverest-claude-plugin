@@ -1,0 +1,7 @@
+# The bundle is a build artifact, not prose. Never rewrite its line endings:
+# a 3.6 MB minified file re-encoded on checkout produces a whole-file diff on
+# every platform boundary, and its bytes should match what the build produced.
+claude-plugin/dist/server.cjs -text
+
+# Everything else is text, normalised to LF in the repository.
+* text=auto eol=lf

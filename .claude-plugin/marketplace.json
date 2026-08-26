@@ -11,15 +11,24 @@
     {
       "name": "qaeverest",
       "source": "./claude-plugin",
-      "description": "Generate AI-powered functional, API, UI & mobile test cases and run security & performance checks via the QAEverest API.",
-      "version": "1.1.0",
+      "description": "The QAEverest QA copilot in Claude Code — same engine as the VS Code and JetBrains extensions. Test-case generation grounded in your codebase, automation suites, execution reports, security and performance checks.",
+      "version": "2.0.0",
       "author": {
         "name": "QAEverest",
         "url": "https://qaeverest.ai"
       },
       "homepage": "https://qaeverest.ai",
       "license": "MIT",
-      "keywords": ["testing", "qa", "test-generation", "api-testing", "ui-automation", "security", "performance", "mcp"]
+      "keywords": [
+        "testing",
+        "qa",
+        "test-generation",
+        "api-testing",
+        "ui-automation",
+        "security",
+        "performance",
+        "mcp"
+      ]
     }
   ]
 }

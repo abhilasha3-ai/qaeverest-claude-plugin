@@ -1,6 +1,6 @@
 # QAEverest — Claude Code Plugin Marketplace
 
-Official [Claude Code](https://code.claude.com/docs/en/plugins) plugin marketplace for **[QAEverest](https://qaeverest.ai)** — generate AI-powered test cases and run security & performance checks without leaving your editor.
+Official [Claude Code](https://code.claude.com/docs/en/plugins) plugin marketplace for **[QAEverest](https://qaeverest.ai)** — generate AI-powered test cases, build and run automation suites, and run security & performance checks without leaving your editor.
 
 ## Install
 
@@ -15,19 +15,26 @@ Then set your API key in the environment before starting Claude Code:
 export QAEVEREST_API_KEY=qae_your_key_here
 ```
 
-Get a key free at <https://app.qaeverest.ai/api-client/signup> (100 credits, no card).
+Get a key free at <https://app.qaeverest.ai/api-client/signup> (100 credits, no card). You can also connect from inside Claude Code with `/qaeverest:connect`.
 
 ## What's in this marketplace
 
 | Plugin | Description |
 |---|---|
-| [`qaeverest`](claude-plugin/) | AI test generation (functional / API / UI / mobile) + security & performance checks via the QAEverest public API. Ships 3 slash commands and 7 MCP tools. |
+| [`qaeverest`](claude-plugin/) | AI test generation (functional / API / UI / mobile), project-grounded test authoring, automation suites, execution reports, and security & performance checks. Ships 14 slash commands and 21 MCP tools. |
 
 See the plugin's [README](claude-plugin/README.md) for commands, tools, and usage, and its [PRIVACY.md](claude-plugin/PRIVACY.md) for data handling.
 
 ## How it works
 
-The plugin runs the [`qaeverest-mcp`](https://www.npmjs.com/package/qaeverest-mcp) server (from the public npm registry) via `npx` and talks to the QAEverest API. No QAEverest source code is required or included here.
+The plugin bundles its own MCP server — `claude-plugin/dist/server.cjs`, a single self-contained file — and Claude Code runs it directly with Node. There is no `npm install` and no `npx` download at startup.
+
+That server is the same engine behind the QAEverest VS Code extension and JetBrains plugin, so the QA behaviour, the slash commands and the chat history format match what you get in those IDEs. Two things work differently here, because Claude Code has no modal dialogs or panel buttons:
+
+- A flow that needs a value asks **through Claude**, which puts the question to you in chat and then continues.
+- Anything that spends credits or starts a real run asks for **explicit approval** before it goes ahead.
+
+Requires **Node.js 18+**.
 
 ## License
 

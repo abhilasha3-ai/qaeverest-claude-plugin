@@ -1,10 +1,12 @@
 {
   "mcpServers": {
     "qaeverest": {
-      "command": "npx",
-      "args": ["-y", "qaeverest-mcp"],
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/server.cjs"],
       "env": {
-        "QAEVEREST_API_KEY": "${QAEVEREST_API_KEY}"
+        "QAEVEREST_API_KEY": "${QAEVEREST_API_KEY}",
+        "QAEVEREST_API_URL": "${QAEVEREST_API_URL}",
+        "QAEVEREST_WORKSPACE": "${CLAUDE_PROJECT_DIR}"
       }
     }
   }

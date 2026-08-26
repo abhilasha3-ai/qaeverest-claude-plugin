@@ -1,10 +1,13 @@
 ---
-description: Show QAEverest credits remaining, monthly requests, and which services are enabled
+description: Show QAEverest credits remaining, key type, and which backend this project talks to
 ---
 
-Call the `get_usage` tool and report, concisely:
-- Credits used / remaining
-- Requests this month (and the limit, if any)
-- Which QAEverest services are enabled for this API key
+Call `qae_status` and report, concisely:
+- Whether an account is connected, and the key type
+- Credits remaining
+- Whether this key can run suites, or is generation-only
+- Any configuration warnings it returns
 
-If a service the user wants to use is disabled, tell them to ask their QAEverest admin to enable it in **Admin → API Management**.
+A configuration warning means this machine is pointed somewhere another machine isn't — usually a local backend URL left in settings. Explain what it means rather than just repeating it.
+
+If credits are exhausted or a service is disabled, the fix is in the QAEverest portal (**Admin → API Management**), not here.
