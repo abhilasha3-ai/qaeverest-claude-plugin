@@ -11,8 +11,8 @@
     {
       "name": "qaeverest",
       "source": "./claude-plugin",
-      "description": "The QAEverest QA copilot in Claude Code — same engine as the VS Code and JetBrains extensions. Test-case generation grounded in your codebase, automation suites, execution reports, security and performance checks.",
-      "version": "2.0.0",
+      "description": "AI-powered QA copilot for Claude Code — test-case generation grounded in your codebase, automation suites, execution reports, security and performance checks.",
+      "version": "2.0.1",
       "author": {
         "name": "QAEverest",
         "url": "https://qaeverest.ai"

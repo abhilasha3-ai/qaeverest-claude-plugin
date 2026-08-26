@@ -1,7 +1,7 @@
 {
   "name": "qaeverest",
-  "description": "The QAEverest QA copilot in Claude Code — the same engine as the VS Code and JetBrains extensions. Generate functional, API, UI and mobile test cases grounded in your actual codebase, build and run automation suites, save HTML execution reports, and run security and performance checks.",
-  "version": "2.0.0",
+  "description": "AI-powered QA copilot for Claude Code. Generate functional, API, UI and mobile test cases grounded in your actual codebase, build and run automation suites, save HTML execution reports, and run security and performance checks — all from chat or slash commands.",
+  "version": "2.0.1",
   "author": {
     "name": "QAEverest",
     "url": "https://qaeverest.ai"

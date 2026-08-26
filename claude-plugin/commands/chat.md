@@ -1,5 +1,5 @@
 ---
-description: Ask the QAEverest QA copilot anything — the same assistant as the VS Code and JetBrains panels
+description: Ask the QAEverest QA copilot anything — generate tests, build and run suites, or ask about a run
 argument-hint: [what you want to test, build, run, or ask about]
 ---
 
