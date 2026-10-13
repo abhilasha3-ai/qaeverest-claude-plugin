@@ -1,6 +1,6 @@
 ---
 description: Run a QAEverest automation suite against an environment
-argument-hint: [suite name or id] [base URL]
+argument-hint: "[suite name or id] [base URL]"
 ---
 
 Run a suite: **$ARGUMENTS**

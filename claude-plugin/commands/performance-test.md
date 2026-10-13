@@ -1,6 +1,6 @@
 ---
 description: Run a load, stress, spike or soak test against a URL
-argument-hint: [https://target.example.com] [load|stress|spike|soak]
+argument-hint: "[https://target.example.com] [load|stress|spike|soak]"
 ---
 
 Run a performance test: **$ARGUMENTS**

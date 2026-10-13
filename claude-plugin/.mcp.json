@@ -4,8 +4,9 @@
       "command": "node",
       "args": ["${CLAUDE_PLUGIN_ROOT}/dist/server.cjs"],
       "env": {
+        "QAEVEREST_CLIENT": "claude",
         "QAEVEREST_API_KEY": "${QAEVEREST_API_KEY}",
-        "QAEVEREST_API_URL": "${QAEVEREST_API_URL}",
+        "QAEVEREST_API_URL": "${QAEVEREST_API_URL:-https://api.qaeverest.ai}",
         "QAEVEREST_WORKSPACE": "${CLAUDE_PROJECT_DIR}"
       }
     }

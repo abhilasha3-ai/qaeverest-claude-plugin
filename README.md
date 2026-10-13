@@ -15,13 +15,13 @@ Then set your API key in the environment before starting Claude Code:
 export QAEVEREST_API_KEY=qae_your_key_here
 ```
 
-Get a key free at <https://app.qaeverest.ai/api-client/signup> (100 credits, no card). You can also connect from inside Claude Code with `/qaeverest:connect`.
+Get a key free at <https://qaeverest.ai/api-client/signup> (no card needed). You can also connect from inside Claude Code with `/qaeverest:connect`.
 
 ## What's in this marketplace
 
 | Plugin | Description |
 |---|---|
-| [`qaeverest`](claude-plugin/) | AI test generation (functional / API / UI / mobile), project-grounded test authoring, automation suites, execution reports, and security & performance checks. Ships 14 slash commands and 21 MCP tools. |
+| [`qaeverest`](claude-plugin/) | AI test generation (functional / API / UI / mobile), project-grounded test authoring, automation suites, execution reports, and security & performance checks. Ships 15 slash commands and 28 MCP tools. |
 
 See the plugin's [README](claude-plugin/README.md) for commands, tools, and usage, and its [PRIVACY.md](claude-plugin/PRIVACY.md) for data handling.
 
