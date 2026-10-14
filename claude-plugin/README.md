@@ -2,7 +2,7 @@
 
 The QAEverest QA copilot, in Claude Code.
 
-The plugin is the shared [QAEverest MCP server](https://www.npmjs.com/package/qaeverest-mcp), bundled, plus slash commands. It is the same server the VS Code, Cursor and JetBrains integrations give their agents, running the same engine as their panels (`extension-core`) — so a fix lands everywhere at once, and a QA workflow you know from the IDE works here unchanged.
+The plugin is the shared [QAEverest MCP server](https://www.npmjs.com/package/@qaeverestsupport.ai/qaeverest-mcp), bundled, plus slash commands. It is the same server the VS Code, Cursor and JetBrains integrations give their agents, running the same engine as their panels (`extension-core`) — so a fix lands everywhere at once, and a QA workflow you know from the IDE works here unchanged.
 
 ## What you get
 
@@ -119,7 +119,7 @@ Generation, suite runs, scans and performance tests are billed to your QAEverest
 
 ## Related
 
-- [`qaeverest-mcp`](https://www.npmjs.com/package/qaeverest-mcp) — the same MCP server on npm, for clients without a QAEverest plugin. It offers the slash commands above as MCP prompts.
+- [`qaeverest-mcp`](https://www.npmjs.com/package/@qaeverestsupport.ai/qaeverest-mcp) — the same MCP server on npm, for clients without a QAEverest plugin. It offers the slash commands above as MCP prompts.
 
 ## Privacy
 
